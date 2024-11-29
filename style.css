@@ -1,0 +1,67 @@
+body{
+    background-image: url(assets/solar-panel-1393880_1920.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    
+}
+h1{
+    text-align: center;
+}
+nav{
+    height: 8vh;  
+    width: 100%;  
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logoNav{
+ height: 20px;
+ margin-right: 135vh;
+}
+.logoForm{
+    height: 70px;
+    width: 70px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20PX;
+}
+.containerMain{
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 700px;
+    padding: 50px;
+    border-radius: 16px;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+}
+#btnSubmit{
+    #btnSubmit {
+        display: block; /* Faz o botão ocupar toda a linha */
+        margin: 20px auto; /* Centraliza horizontalmente e adiciona margem */
+    }
+    
+}
+.lo{
+    width: 260px;
+}
+.lo2{
+    width: 260px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}

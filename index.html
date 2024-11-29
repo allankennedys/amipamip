@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Cliente - AMIP | Portal do Vendedor</title>
+    <link rel="icon" href="assets/amipSUN.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"></link>
+
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary w=100 fixed-top">
+        <div class="container-fluid">
+          <img class="logoNav" src="assets/amipBlue.png" alt="Logotipo AMIP">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold ms-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PORTAL DO VENDEDOR
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Registrar Nova Venda</a></li>
+                      <li><a class="dropdown-item" href="#">Registrar Instalação</a></li>
+                      <li><a class="dropdown-item" href="#">Cadastrar Novo Cliente</a></li>
+                      <li><a class="dropdown-item" href="#">Consultar Vendas</a></li>
+                      <li><a class="dropdown-item" href="listar_cliente.php">Consultar Clientes</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+<div class="containerMain">
+    <div class="container1">
+        <h1>Cadastrar Novo Cliente</h1>
+        <img class="logoForm" src="assets/amipSUN.png" alt="Logotipo AMIP">
+        <form action="cadastrar_cliente.php" method="POST">
+          
+          <div class="lo">
+              <div class="mb-3">
+                  <label for="exampleInputName1" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="exampleInputName1" name="nome_completo" placeholder="Digite aqui o nome do cliente" required>
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputDate1" class="form-label">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="exampleInputDate1" name="data_nascimento" required>
+              </div>
+              <div class="mb-3">
+                <label for="tipoCliente" class="form-label">Tipo de Cliente</label>
+                <select class="form-select" id="tipoCliente" name="tipo_cliente" required>
+                    <option value="" disabled selected>Selecione o tipo de cliente</option>
+                    <option value="PF">Pessoa Física (PF)</option>
+                    <option value="PJ">Pessoa Jurídica (PJ)</option>
+                </select>
+            </div>
+            
+            <div class="mb-3 d-flex align-items-center">
+              <div style="flex-grow: 1; margin-right: 10px;">
+                  <label for="exampleInputText1" class="form-label">CPF/CNPJ</label>
+                  <input type="text" class="form-control" id="exampleInputText1" name="cpf_cnpj" placeholder="CPF ou CNPJ (apenas números)" required>
+              </div>
+              <div>
+                  <button type="submit" class="btn btn-primary" id="btnSubmit">Cadastrar</button>
+              </div>
+          </div>
+          
+          </div>
+          <div class="lo2">
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Ex: cliente@amip.com" required>
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputTel1" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="exampleInputTel1" name="telefone" placeholder="Telefone com DDD" required>
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputAdress1" class="form-label">Endereço Completo</label>
+                  <input type="text" class="form-control" id="exampleInputAdress1" name="endereco_completo" placeholder="Ex: Av. Nobre 74, CEP 29112024" required>
+              </div>
+          </div>
+          </div>
+            
+          
+
+      </form>
+
+      </div>
+
+</div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
